@@ -22,11 +22,11 @@ codeunit 50100 Items
     var
         ItemCustomTablez: Record "Item Custom Tablez";
     begin
-        ItemCustomTablez.Get();
-        ItemCustomTablez.SetCurrentKey("Substitutes Exist");
-        ItemCustomTablez.SetAscending("Substitutes Exist",true);
+        //ItemCustomTablez.Get();
+        //ItemCustomTablez.SetCurrentKey("Substitutes Exist");
+        //ItemCustomTablez.SetAscending("Substitutes Exist",true);
         //ItemCustomTablez.Ascending := true;
-        ItemCustomTablez.Modify();
+        //ItemCustomTablez.Modify();
     end;
 
     procedure BlockFifthItem()
