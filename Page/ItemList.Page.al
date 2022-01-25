@@ -61,7 +61,9 @@ page 50100 "Item List Page"
                 Caption = 'Sort data with Substituties Exists';
                 trigger OnAction()
                 begin
-                    Items.SortWithSubstituteExist();
+                    //Items.SortWithSubstituteExist();
+                    Rec.SetCurrentKey("Substitutes Exist");
+                    Rec.SetAscending("Substitutes Exist", true);
                 end;
             }
             action("Block Fifth Item")

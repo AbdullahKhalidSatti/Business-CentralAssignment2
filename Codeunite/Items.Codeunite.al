@@ -20,13 +20,15 @@ codeunit 50100 Items
 
     procedure SortWithSubstituteExist()
     var
+
         ItemCustomTablez: Record "Item Custom Tablez";
     begin
-        ItemCustomTablez.Get();
-        ItemCustomTablez.SetCurrentKey("Substitutes Exist");
-        //ItemCustomTablez.SetAscending("Substitutes Exist", true);
-        ItemCustomTablez.Ascending := true;
-        ItemCustomTablez.Modify();
+
+        // Don't need this codeunite to Sort data, we can do this action on page also
+        // ItemCustomTablez.SetRange("Unite Price");
+        // ItemCustomTablez.SetCurrentKey("Unite Price");
+        // ItemCustomTablez.SetAscending("Unite Price", true);
+        // ItemCustomTablez.Ascending := true;
     end;
 
     procedure BlockFifthItem()
